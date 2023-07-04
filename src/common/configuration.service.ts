@@ -3,7 +3,7 @@ export class Configuration {
     return () => ({
       environment: process.env.NODE_ENV || 'Development',
       timezone: 'America/Sao_Paulo',
-      port: process.env.NODE_PORT || process.env.PORT || 8080,
+      port: process.env.PORT || 8080,
       loggingLevel: process.env.GCLOUD_LOGGING_MINIMUM_LEVEL || 'info',
       plaid: {
         clientId: process.env.PALID_CLIENT_ID,
